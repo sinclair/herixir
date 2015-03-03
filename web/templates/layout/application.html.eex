@@ -29,7 +29,7 @@
     </div> <!-- /container -->
 
     <!-- React -->
-    <script src="https://fb.me/react-0.12.2.js"></script>
+    <script src="/js/react-0.12.2.min.js"></script>
     <script src="/js/hola.js"></script>
 
   </body>
