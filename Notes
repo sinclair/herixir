@@ -1,0 +1,29 @@
+Generate a Phoenix app as instructed here
+http://bit.ly/phoenix-getting-started
+
+Heroku app
+git init
+heroku create <your app name>
+
+Heroku Elixir Build-pack
+  heroku config:set BUILDPACK_URL=https://github.com/HashNuke/heroku-buildpack-elixir.git -a <your customized app name>
+  heroku config:set MIX_ENV=prod
+
+Procfile
+
+web: yes | mix compile.protocols && elixir -pa _build/prod/consolidated -S mix phoenix.server
+
+cat >> elixir_buildpack.config <<!
+erlang_version=17.2
+elixir_version=1.0.3
+always_rebuild=true
+!
+
+
+Heroku
+git push heroku master
+
+Other
+heroku run mix run seeds.ex
+
+
