@@ -60,7 +60,20 @@ heroku config:set MIX_ENV=prod
 web: mix compile.protocols && elixir -pa _build/prod/consolidated -S mix phoenix.server
 ```
 
+##### Run locally before deploying
+
+```bash
+heroku local
+```
+**Note**: Needs the 'foreman' ruby gem to be installed.
+
 ##### Deploying to Heroku (via _git push_)
+###### Git commit
+```bash
+git commit -am "committed most recent changes"
+```
+
+###### Heroku deploy
 ```bash
 git push heroku master
 ```
