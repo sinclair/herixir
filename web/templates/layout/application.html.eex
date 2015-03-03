@@ -30,7 +30,7 @@
 
     <!-- React -->
     <script src="/js/react-0.12.2.min.js"></script>
-    <script src="/js/hola.js"></script>
+    <script src="/js/hola-react.js"></script>
 
   </body>
 </html>
