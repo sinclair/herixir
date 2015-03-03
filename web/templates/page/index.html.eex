@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <div id="react-example"></div>
-  <p class="lead">Toying with Elixir, Phoenix and React.</p>
+  <p class="lead">Toying with Elixir, Phoenix and React ... on Heroku.</p>
 </div>
 
 <div class="row marketing">

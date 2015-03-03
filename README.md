@@ -19,17 +19,17 @@ git init
 heroku create <your app name for heroku>
 ```
 
-##### Heroku Elixir Build-pack
+##### Heroku Elixir Build-pack configuration
 ```bash
-heroku config:set BUILDPACK_URL=https://github.com/HashNuke/heroku-buildpack-elixir.git -a <your customized app name>
+heroku config:set BUILDPACK_URL=https://github.com/HashNuke/heroku-buildpack-elixir.git -a <your app name for heroku>
 ```
 ```bash
 heroku config:set MIX_ENV=prod
 ```
 
-##### Creating a Procfile
+##### Creating a Procfile for Heroku to launch the app
 ```bash
-web: yes | mix compile.protocols && elixir -pa _build/prod/consolidated -S mix phoenix.server
+web: mix compile.protocols && elixir -pa _build/prod/consolidated -S mix phoenix.server
 ```
 
 ##### Initializing elixir_buildpack.config
@@ -42,7 +42,7 @@ always_rebuild=true
 !
 ```
 
-##### Heroku
+##### Deploying to Heroku (via _git push_)
 ```bash
 git push heroku master
 ```
