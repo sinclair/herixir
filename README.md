@@ -9,7 +9,8 @@ http://bit.ly/phoenix-getting-started
 
 All commands in the following steps should be issued from the application root directory.
 
-#### Creating the Heroku app
+#### Creating the Heroku app with the Elixir build-pack
+
 ##### Initialization and Creation
 ```bash
 git init
@@ -19,20 +20,25 @@ git init
 heroku create <your app name for heroku>
 ```
 
-##### Heroku Elixir Build-pack configuration
-```bash
-heroku config:set BUILDPACK_URL=https://github.com/HashNuke/heroku-buildpack-elixir.git -a <your app name for heroku>
-```
-```bash
-heroku config:set MIX_ENV=prod
-```
+###### Heroku Elixir build-packs
 
-##### Creating a Procfile for Heroku to launch the app
-```bash
-web: mix compile.protocols && elixir -pa _build/prod/consolidated -S mix phoenix.server
-```
+Basically, Elixir is not a core language at this time so it is necessary to use an Elixir build-pack to deploy Elixir build-pack to Heroku.
+More information can be found here, http://bit.ly/heroku-buildpack-api .
 
-##### Initializing elixir_buildpack.config
+(Credit to, https://github.com/HashNuke/heroku-buildpack-elixir.git)
+
+```bash
+heroku buildpack:set https://github.com/HashNuke/heroku-buildpack-elixir.git
+```
+Note: The setting of the build-pack can occur when creating the Heroku app thus,
+
+```bash
+heroku create <your app name for heroku> --buildpack https://github.com/HashNuke/heroku-buildpack-elixir.git
+```
+This is an alternative approach which has the same.
+
+
+###### Initializing elixir_buildpack.config
 
 ```bash
 cat >> elixir_buildpack.config <<!
@@ -40,6 +46,18 @@ erlang_version=17.2
 elixir_version=1.0.3
 always_rebuild=true
 !
+```
+
+##### Heroku run-time configuration
+
+```bash
+heroku config:set MIX_ENV=prod
+```
+
+
+##### Creating a Procfile for Heroku to launch the app
+```bash
+web: mix compile.protocols && elixir -pa _build/prod/consolidated -S mix phoenix.server
 ```
 
 ##### Deploying to Heroku (via _git push_)

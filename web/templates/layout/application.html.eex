@@ -23,7 +23,12 @@
       <%= @inner %>
 
       <div class="footer">
-        <p><a href="http://phoenixframework.org">phoenixframework.org</a></p>
+        <p>
+          <a class="pull-left" href="http://phoenixframework.org">phoenixframework.org</a>
+
+          <span class="pull-right"><%= time_now %></span>
+        </p>
+
       </div>
 
     </div> <!-- /container -->
