@@ -1,6 +1,6 @@
 <div class="jumbotron">
-  <h2>Welcome to Phoenix!</h2>
-  <p class="lead">Phoenix is an Elixir Web Framework targeting full-featured, fault tolerant applications with realtime functionality.</p>
+  <div id="react-example"></div>
+  <p class="lead">Toying with Elixir, Phoenix and React.</p>
 </div>
 
 <div class="row marketing">
@@ -12,6 +12,12 @@
       </li>
       <li>
         <a href="https://github.com/phoenixframework/phoenix">Source</a>
+      </li>
+      <li>
+        <a href="http://elixir-lang.org">The Elixir Website</a>
+      </li>
+      <li>
+        <a href="https://facebook.github.io/react/index.html">React</a>
       </li>
     </ul>
   </div>
@@ -25,10 +31,6 @@
       <li>
         <a href="irc://irc.freenode.net/elixir-lang">#elixir-lang on freenode IRC</a>
       </li>
-      <li>
-        <a href="https://twitter.com/chris_mccord">@chris_mccord</a>
-      </li>
     </ul>
   </div>
 </div>
-

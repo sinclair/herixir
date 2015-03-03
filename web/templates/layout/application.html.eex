@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Phoenix!</title>
+    <title>Hola Mundo!</title>
     <link rel="stylesheet" href="/css/phoenix.css">
   </head>
 
@@ -15,7 +15,7 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+          <li><a href="http://www.phoenixframework.org/docs">Get Started with Phoenix</a></li>
         </ul>
         <span class="logo"></span>
       </div>
@@ -27,5 +27,10 @@
       </div>
 
     </div> <!-- /container -->
+
+    <!-- React -->
+    <script src="https://fb.me/react-0.12.2.js"></script>
+    <script src="/js/hola.js"></script>
+
   </body>
 </html>
