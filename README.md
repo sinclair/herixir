@@ -1,5 +1,7 @@
 # Herixir
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 Messing about with Elixir, Phoenix, React and Heroku deployment.
 
 ## Steps

@@ -1,0 +1,10 @@
+{
+  "name": "Herixir Phoenix",
+  "description": "An Elixir, Phoenix, React simple app.",
+  "repository": "https://github.com/sinclair/herixir",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+  },
+  "keywords": ["elixir", "phoenix", "cowboy", "ranch", "sheriff", "react"]
+
+}
