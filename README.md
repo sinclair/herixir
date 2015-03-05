@@ -37,7 +37,7 @@ Note: The setting of the build-pack can occur when creating the Heroku app thus,
 ```bash
 heroku create <your app name for heroku> --buildpack https://github.com/HashNuke/heroku-buildpack-elixir.git
 ```
-This is an alternative approach which has the same.
+This is an alternative approach with the same outcome.
 
 
 ###### Initializing elixir_buildpack.config
