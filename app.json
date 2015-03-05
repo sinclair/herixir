@@ -6,5 +6,4 @@
     "BUILDPACK_URL": "https://github.com/sinclair/heroku-buildpack-elixir.git"
   },
   "keywords": ["elixir", "phoenix", "cowboy", "ranch", "sheriff", "react"]
-
 }

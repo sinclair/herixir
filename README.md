@@ -24,7 +24,7 @@ heroku create <your app name for heroku>
 
 ###### Heroku Elixir build-packs
 
-Basically, Elixir is not a core language at this time so it is necessary to use an Elixir build-pack to deploy Elixir build-pack to Heroku.
+Basically, Elixir is not a core language at this time so it is necessary to use an Elixir build-pack to deploy an Elixir app to Heroku.
 More information can be found here, http://bit.ly/heroku-buildpack-api .
 
 (Credit to, https://github.com/HashNuke/heroku-buildpack-elixir.git)
